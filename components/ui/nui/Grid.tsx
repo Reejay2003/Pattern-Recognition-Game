@@ -26,7 +26,6 @@ export default function Grid({
   const [activeBox, setActiveBox] = useState<number | null>(null);
   const [showStartButton, setShowStartButton] = useState(true);
   const [clicked, setClicked] = useState<Record<number, boolean>>({});
-  const [level, setLevel] = useState(1);
 
   const clickLight = (index: number) => {
     setClicked((prev) => ({ ...prev, [index]: true }));
